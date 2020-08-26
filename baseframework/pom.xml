@@ -88,7 +88,7 @@
 							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
 						<systemPropertyVariables>
-							<executionBrowser>${browser}</executionBrowser>
+							<executionBrowser>${browser}</executionBrowser>						
 							<appURL>${environment}</appURL>
 						</systemPropertyVariables>						
 					</configuration>

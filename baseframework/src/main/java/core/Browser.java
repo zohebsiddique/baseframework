@@ -43,6 +43,7 @@ public class Browser {
 
     public void quitDriver() {
         if(null != driver) {
+        	driver.get().quit();
         	driver.remove();
         }
     }

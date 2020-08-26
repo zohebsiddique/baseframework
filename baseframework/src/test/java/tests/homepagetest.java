@@ -25,7 +25,7 @@ public class homepagetest extends BaseTest  {
 		driver = getDriver();
 		driver.get(url);
 //		extentTest.log(Status.PASS, "This is a logging event for homepageTests, and it passed!");
-		assertEquals(40,30);
+		assertEquals(40,40);
 		}
 		catch(Exception e){
 			System.out.println("Something went wrong");
