@@ -60,7 +60,7 @@ public class BaseTest extends Browser  {
 	@Parameters({"browser"})
 	@BeforeClass
 	public void setup(String browser) {
-		setDriver(browser);
+		setDriver(browser.toLowerCase());
 	
 	}	
 	

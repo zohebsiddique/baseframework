@@ -33,6 +33,10 @@ public class Browser {
 			System.setProperty("webdriver.edge.driver", "driver/MicrosoftWebDriver.exe");
 			driver = new EdgeDriver();
 		}
+		else {
+			System.setProperty("webdriver.chrome.driver","driver/chromedriver.exe");			
+			driver = new ChromeDriver();
+		}
         driver.manage().window().maximize();
 		
     }
