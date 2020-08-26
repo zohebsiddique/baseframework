@@ -89,7 +89,7 @@
 						</suiteXmlFiles>
 						<systemPropertyVariables>
 							<executionBrowser>${browser}</executionBrowser>
-							<appURL>${urlToBeTested}</appURL>
+							<appURL>${environment}</appURL>
 						</systemPropertyVariables>						
 					</configuration>
 				</plugin>
