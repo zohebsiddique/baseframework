@@ -21,7 +21,7 @@ public class login extends BaseTest{
     public void login() throws InterruptedException {
 		extentTest = extent.createTest("MySecondTest");		
 		this.driver = getDriver();
-		driver.get("http://www.youtube.com");
+		driver.get(url);
 		extentTest.log(Status.PASS, "This is a logging event for loginpageTests, and it passed!");
 	}
 	
