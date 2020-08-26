@@ -49,6 +49,7 @@ public class BaseTest extends Browser  {
 		spark.config().setEncoding("utf-8");
 		spark.config().setTheme(Theme.DARK);		
 		extent.attachReporter(spark);
+		System.out.println("environment is : " + environment);
 			Properties prop = readPropertiesFile("environment-"+environment.toLowerCase()+".properties");
 			url = prop.getProperty("url");
 		} catch (IOException e) {
