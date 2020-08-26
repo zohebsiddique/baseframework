@@ -93,8 +93,6 @@ public class BaseTest extends Browser  {
 	}
 	
 	public static String takeSnapShot(WebDriver driver) throws Exception{
-
-
         TakesScreenshot scrShot =(TakesScreenshot)driver;
         File srcFile=scrShot.getScreenshotAs(OutputType.FILE);
         String path = System.getProperty("user.dir")+"/Screenshots/"+System.currentTimeMillis();
