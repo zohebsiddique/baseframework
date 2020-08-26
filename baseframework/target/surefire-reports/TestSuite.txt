@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.627 s - in TestSuite
+Tests run: 14, Failures: 1, Errors: 0, Skipped: 13, Time elapsed: 1.444 s <<< FAILURE! - in TestSuite
+tests.homepagetest.reportSetup  Time elapsed: 0.476 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'environment' is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\git\baseframework\baseframework\testng.xml
+

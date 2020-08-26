@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>homepage</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/4</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 25 21:46:47 EDT 2020</td>
+<td>Started on:</td><td>Tue Aug 25 22:02:06 EDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16162 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (794 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,96 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.homepagetest.reportSetup()'><b>reportSetup</b><br>Test class: tests.homepagetest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\git\baseframework\baseframework\testng.xml
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace131635550", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace131635550'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\git\baseframework\baseframework\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:272)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>-1598407325</td>
+<td>tests.homepagetest@4f18837a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.homepagetest.setup()'><b>setup</b><br>Test class: tests.homepagetest</td>
+<td></td>
+<td>-1598407326</td>
+<td>tests.homepagetest@4f18837a</td></tr>
+<tr>
+<td title='tests.login.setup()'><b>setup</b><br>Test class: tests.login</td>
+<td></td>
+<td>-1598407326</td>
+<td>tests.login@359f7cdf</td></tr>
+<tr>
+<td title='tests.login.getResult()'><b>getResult</b><br>Test class: tests.login</td>
+<td></td>
+<td>-1598407326</td>
+<td>tests.login@359f7cdf</td></tr>
+<tr>
+<td title='tests.homepagetest.getResult()'><b>getResult</b><br>Test class: tests.homepagetest</td>
+<td></td>
+<td>-1598407326</td>
+<td>tests.homepagetest@4f18837a</td></tr>
+<tr>
+<td title='tests.login.getResult()'><b>getResult</b><br>Test class: tests.login</td>
+<td></td>
+<td>-1598407326</td>
+<td>tests.login@359f7cdf</td></tr>
+<tr>
+<td title='tests.login.getResult()'><b>getResult</b><br>Test class: tests.login</td>
+<td></td>
+<td>-1598407326</td>
+<td>tests.login@359f7cdf</td></tr>
+<tr>
+<td title='tests.homepagetest.cleanup()'><b>cleanup</b><br>Test class: tests.homepagetest</td>
+<td></td>
+<td>-1598407326</td>
+<td>tests.homepagetest@4f18837a</td></tr>
+<tr>
+<td title='tests.login.cleanup()'><b>cleanup</b><br>Test class: tests.login</td>
+<td></td>
+<td>-1598407326</td>
+<td>tests.login@359f7cdf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,24 +164,132 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.homepagetest.homepageTests()'><b>homepageTests</b><br>Test class: tests.homepagetest</td>
-<td></td>
-<td>8</td>
-<td>tests.homepagetest@2e005c4b</td></tr>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\git\baseframework\baseframework\testng.xml
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1548395725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1548395725'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\git\baseframework\baseframework\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:272)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>tests.homepagetest@4f18837a</td></tr>
 <tr>
 <td title='tests.login.login()'><b>login</b><br>Test class: tests.login</td>
-<td></td>
-<td>6</td>
-<td>tests.login@4567f35d</td></tr>
-<tr>
-<td title='tests.login.logins()'><b>logins</b><br>Test class: tests.login<br>Parameters: zohebs, qazqaz</td>
-<td></td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\git\baseframework\baseframework\testng.xml
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace471666870", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace471666870'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\git\baseframework\baseframework\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:272)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
 <td>0</td>
-<td>tests.login@4567f35d</td></tr>
+<td>tests.login@359f7cdf</td></tr>
 <tr>
-<td title='tests.login.logins()'><b>logins</b><br>Test class: tests.login<br>Parameters: zoheb, zaqzaq</td>
-<td></td>
+<td title='tests.login.logins()'><b>logins</b><br>Test class: tests.login</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\git\baseframework\baseframework\testng.xml
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1038481136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1038481136'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\git\baseframework\baseframework\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:272)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
 <td>0</td>
-<td>tests.login@4567f35d</td></tr>
+<td>tests.login@359f7cdf</td></tr>
+<tr>
+<td title='tests.login.logins()'><b>logins</b><br>Test class: tests.login</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\git\baseframework\baseframework\testng.xml
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1131187208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1131187208'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\git\baseframework\baseframework\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:272)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:704)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</pre></div></td>
+<td>0</td>
+<td>tests.login@359f7cdf</td></tr>
 </table><p>
 </body>
 </html>

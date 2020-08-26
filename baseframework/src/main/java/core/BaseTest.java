@@ -41,30 +41,25 @@ public class BaseTest extends Browser  {
 	public static ExtentTest node;
 	public static String url;
 	
-//	@Parameters({"environment"})
+	@Parameters({"environment"})
 	@BeforeSuite
-	public void reportSetup() {
-//    public void reportSetup(String environment) {		
+    public void reportSetup(String environment) {		
 		try {
 		spark = new ExtentSparkReporter("reports/Spark.html");
 		spark.config().setEncoding("utf-8");
 		spark.config().setTheme(Theme.DARK);		
 		extent.attachReporter(spark);
-		Properties prop = readPropertiesFile("environment-"+"qa".toLowerCase()+".properties");
-//			Properties prop = readPropertiesFile("environment-"+environment.toLowerCase()+".properties");
+			Properties prop = readPropertiesFile("environment-"+environment.toLowerCase()+".properties");
 			url = prop.getProperty("url");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}			
 	}
 	
-//	@Parameters({"browser"})
+	@Parameters({"browser"})
 	@BeforeClass
-//	public void setup(String browser) {
-    public void setup() {		
-//		setDriver(browser.toLowerCase());
-		String browser = "chrome"; 
-		setDriver(browser.toLowerCase());	
+	public void setup(String browser) {
+		setDriver(browser.toLowerCase());
 	}	
 	
 	@AfterClass

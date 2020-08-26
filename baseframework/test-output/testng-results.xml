@@ -1,40 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-25T21:46:17 EDT" name="Default suite" finished-at="2020-08-25T21:46:26 EDT" duration-ms="9252">
+  <suite started-at="2020-08-25T22:05:31 EDT" name="Default suite" finished-at="2020-08-25T22:05:32 EDT" duration-ms="55">
     <groups>
     </groups>
-    <test started-at="2020-08-25T21:46:17 EDT" name="Default test" finished-at="2020-08-25T21:46:26 EDT" duration-ms="9252">
+    <test started-at="2020-08-25T22:05:31 EDT" name="Default test" finished-at="2020-08-25T22:05:32 EDT" duration-ms="55">
       <class name="tests.homepagetest">
-        <test-method is-config="true" signature="reportSetup()[pri:0, instance:tests.homepagetest@22555ebf]" started-at="2020-08-25T21:46:17 EDT" name="reportSetup" finished-at="2020-08-25T21:46:17 EDT" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="reportSetup(java.lang.String)[pri:0, instance:tests.homepagetest@3c41ed1d]" started-at="2020-08-25T22:05:31 EDT" name="reportSetup" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1598407531942" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'environment' is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\AppData\Local\Temp\testng-eclipse--1905499925\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'environment' is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\AppData\Local\Temp\testng-eclipse--1905499925\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportSetup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.homepagetest@22555ebf]" started-at="2020-08-25T21:46:17 EDT" name="setup" finished-at="2020-08-25T21:46:23 EDT" duration-ms="6137" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.homepagetest@3c41ed1d]" started-at="2020-08-25T22:05:31 EDT" name="setup" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1598407531980" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="homepageTests()[pri:0, instance:tests.homepagetest@22555ebf]" started-at="2020-08-25T21:46:23 EDT" name="homepageTests" finished-at="2020-08-25T21:46:25 EDT" duration-ms="2202" status="PASS">
+        <test-method signature="homepageTests()[pri:0, instance:tests.homepagetest@3c41ed1d]" started-at="2020-08-25T22:05:31 EDT" name="homepageTests" finished-at="2020-08-25T22:05:31 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'environment' is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\AppData\Local\Temp\testng-eclipse--1905499925\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'environment' is required by BeforeSuite on method reportSetup but has not been marked @Optional or defined
+in C:\Users\Zoheb Siddique\AppData\Local\Temp\testng-eclipse--1905499925\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homepageTests -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.homepagetest@22555ebf]" started-at="2020-08-25T21:46:25 EDT" name="getResult" finished-at="2020-08-25T21:46:25 EDT" duration-ms="17" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=homepageTests status=SUCCESS method=homepagetest.homepageTests()[pri:0, instance:tests.homepagetest@22555ebf] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.homepagetest@3c41ed1d]" started-at="2020-08-25T22:05:32 EDT" name="getResult" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1598407532001" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="cleanup()[pri:0, instance:tests.homepagetest@22555ebf]" started-at="2020-08-25T21:46:25 EDT" name="cleanup" finished-at="2020-08-25T21:46:26 EDT" duration-ms="849" status="PASS">
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:tests.homepagetest@3c41ed1d]" started-at="2020-08-25T22:05:32 EDT" name="cleanup" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1598407532004" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.homepagetest@22555ebf]" started-at="2020-08-25T21:46:26 EDT" name="tearDown" finished-at="2020-08-25T21:46:27 EDT" duration-ms="389" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.homepagetest@3c41ed1d]" started-at="2020-08-25T22:05:32 EDT" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1598407532068" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" name="homepage(failed)" verbose="0">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="classes" name="homepage(failed)" verbose="0">
     <classes>
       <class name="tests.homepagetest">
         <methods>
@@ -13,6 +13,17 @@
           <include name="reportSetup"/>
         </methods>
       </class> <!-- tests.homepagetest -->
+      <class name="tests.login">
+        <methods>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="logins"/>
+          <include name="setup"/>
+          <include name="getResult"/>
+          <include name="cleanup"/>
+          <include name="reportSetup"/>
+        </methods>
+      </class> <!-- tests.login -->
     </classes>
   </test> <!-- homepage(failed) -->
 </suite> <!-- Failed suite [Suite] -->
