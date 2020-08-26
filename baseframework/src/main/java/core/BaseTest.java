@@ -50,7 +50,7 @@ public class BaseTest extends Browser  {
 		spark.config().setTheme(Theme.DARK);		
 		extent.attachReporter(spark);
 
-			Properties prop = readPropertiesFile("environment-"+environment+".properties");
+			Properties prop = readPropertiesFile("environment-"+environment.toLowerCase()+".properties");
 			url = prop.getProperty("url");
 		} catch (IOException e) {
 			e.printStackTrace();
