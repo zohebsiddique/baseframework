@@ -11,7 +11,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 public class Browser {
-	public WebDriver driver;
+	protected ThreadLocal<WebDriver> driver= new ThreadLocal<WebDriver>();;
     
     public void setDriver(String browser) {
 //		String browser = System.getenv("Browser").toLowerCase();
@@ -22,33 +22,33 @@ public class Browser {
 			System.setProperty("webdriver.chrome.driver","driver/chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();  
 			options.setHeadless(headless); //Set Chrome option
-			driver = new ChromeDriver(options);
+			driver.set(new ChromeDriver(options));
 			
 		} 
 		else if(browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "driver/geckodriver.exe");
-			driver = new FirefoxDriver();
+			driver.set(new FirefoxDriver());
 		}
 		else if(browser.equals("edge")) {
 			System.setProperty("webdriver.edge.driver", "driver/MicrosoftWebDriver.exe");
-			driver = new EdgeDriver();
+			driver.set(new EdgeDriver());
 		}
 		else {
 			System.setProperty("webdriver.chrome.driver","driver/chromedriver.exe");			
-			driver = new ChromeDriver();
+			driver.set(new ChromeDriver());
 		}
-        driver.manage().window().maximize();
+        driver.get().manage().window().maximize();
 		
     }
 
     public void quitDriver() {
         if(null != driver) {
-            driver.quit();
+        	driver.remove();
         }
     }
 
     public WebDriver getDriver() {
-        return driver;
+        return driver.get();
     }	
 
 }
