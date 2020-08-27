@@ -38,9 +38,9 @@ public class BaseTest extends Browser  {
 	public static ExtentTest node;
 	public static String url;
 	
-	@Parameters({"environment"})
+	@Parameters({"stage"})
 	@BeforeSuite
-    public void reportSetup(String environment) {		
+    public void reportSetup(String stage) {		
 		try {
 			
 		spark = new ExtentSparkReporter("reports/Spark.html");
@@ -48,7 +48,7 @@ public class BaseTest extends Browser  {
 		spark.config().setTheme(Theme.DARK);		
 		extent.attachReporter(spark);
 
-			Properties prop = readPropertiesFile("environment-"+environment.toLowerCase()+".properties");
+			Properties prop = readPropertiesFile("environment-"+stage.toLowerCase()+".properties");
 			url = prop.getProperty("url");
 		} catch (IOException e) {
 			e.printStackTrace();

@@ -60,6 +60,13 @@
 			<artifactId>browserstack-local-java</artifactId>
 			<version>1.0.3</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -92,7 +99,7 @@
 						</suiteXmlFiles>
 						<systemPropertyVariables>
 							<browser>${browser}</browser>
-							<environment>${environment}</environment>
+							<stage>${stage}</stage>
 							<platform>${platform}</platform>
 							<OS>${OS}</OS>
 						</systemPropertyVariables>

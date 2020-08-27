@@ -14,6 +14,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import com.browserstack.local.Local;
+import org.json.simple.parser.JSONParser;
 
 public class Browser {
 	protected ThreadLocal<WebDriver> driver= new ThreadLocal<WebDriver>();
