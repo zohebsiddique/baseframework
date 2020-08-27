@@ -2,12 +2,12 @@
 <testng-results ignored="2" total="7" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-26T22:03:38 EDT" name="Suite" finished-at="2020-08-26T22:04:22 EDT" duration-ms="43416">
+  <suite started-at="2020-08-27T17:53:36 EDT" name="Suite" finished-at="2020-08-27T17:54:15 EDT" duration-ms="38799">
     <groups>
     </groups>
-    <test started-at="2020-08-26T22:03:38 EDT" name="homepage" finished-at="2020-08-26T22:04:22 EDT" duration-ms="43416">
+    <test started-at="2020-08-27T17:53:36 EDT" name="homepage" finished-at="2020-08-27T17:54:15 EDT" duration-ms="38799">
       <class name="tests.homepagetest">
-        <test-method is-config="true" signature="reportSetup(java.lang.String)[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-26T22:03:38 EDT" name="reportSetup" finished-at="2020-08-26T22:03:38 EDT" duration-ms="190" status="PASS">
+        <test-method is-config="true" signature="reportSetup(java.lang.String)[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-27T17:53:36 EDT" name="reportSetup" finished-at="2020-08-27T17:53:36 EDT" duration-ms="217" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportSetup -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-26T22:03:38 EDT" name="setup" finished-at="2020-08-26T22:03:49 EDT" duration-ms="10803" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-27T17:53:36 EDT" name="setup" finished-at="2020-08-27T17:53:47 EDT" duration-ms="11104" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,11 +39,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getElements()[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-26T22:03:49 EDT" name="getElements" finished-at="2020-08-26T22:03:58 EDT" duration-ms="9187" status="PASS">
+        <test-method signature="getElements()[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-27T17:53:47 EDT" name="getElements" finished-at="2020-08-27T17:53:55 EDT" duration-ms="7856" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getElements -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-26T22:03:58 EDT" name="getResult" finished-at="2020-08-26T22:03:58 EDT" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-27T17:53:55 EDT" name="getResult" finished-at="2020-08-27T17:53:55 EDT" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,11 +54,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="homepageTests()[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-26T22:03:58 EDT" name="homepageTests" finished-at="2020-08-26T22:04:02 EDT" duration-ms="3515" status="PASS">
+        <test-method signature="homepageTests()[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-27T17:53:55 EDT" name="homepageTests" finished-at="2020-08-27T17:53:58 EDT" duration-ms="2886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homepageTests -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-26T22:04:02 EDT" name="getResult" finished-at="2020-08-26T22:04:02 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-27T17:53:58 EDT" name="getResult" finished-at="2020-08-27T17:53:58 EDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,17 +69,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="cleanup()[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-26T22:04:02 EDT" name="cleanup" finished-at="2020-08-26T22:04:02 EDT" duration-ms="807" status="PASS">
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-27T17:53:58 EDT" name="cleanup" finished-at="2020-08-27T17:53:58 EDT" duration-ms="576" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-26T22:04:22 EDT" name="tearDown" finished-at="2020-08-26T22:04:22 EDT" duration-ms="375" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.homepagetest@399f45b1]" started-at="2020-08-27T17:54:15 EDT" name="tearDown" finished-at="2020-08-27T17:54:15 EDT" duration-ms="422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.homepagetest -->
       <class name="tests.login">
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-26T22:04:02 EDT" name="setup" finished-at="2020-08-26T22:04:12 EDT" duration-ms="9815" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-27T17:53:58 EDT" name="setup" finished-at="2020-08-27T17:54:07 EDT" duration-ms="9145" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -100,11 +100,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-26T22:04:12 EDT" name="login" finished-at="2020-08-26T22:04:19 EDT" duration-ms="6499" status="PASS">
+        <test-method signature="login()[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-27T17:54:07 EDT" name="login" finished-at="2020-08-27T17:54:13 EDT" duration-ms="5434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-26T22:04:19 EDT" name="getResult" finished-at="2020-08-26T22:04:19 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-27T17:54:13 EDT" name="getResult" finished-at="2020-08-27T17:54:13 EDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,23 +115,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="logins(java.lang.String, java.lang.String)[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-26T22:04:20 EDT" name="logins" data-provider="excelSheetNameAsMethodName" finished-at="2020-08-26T22:04:20 EDT" duration-ms="12" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[zohebs]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[qazqaz]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logins -->
-        <test-method signature="logins(java.lang.String, java.lang.String)[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-26T22:04:20 EDT" name="logins" data-provider="excelSheetNameAsMethodName" finished-at="2020-08-26T22:04:20 EDT" duration-ms="14" status="PASS">
+        <test-method signature="logins(java.lang.String, java.lang.String)[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-27T17:54:14 EDT" name="logins" data-provider="excelSheetNameAsMethodName" finished-at="2020-08-27T17:54:14 EDT" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -147,7 +131,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logins -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-26T22:04:20 EDT" name="getResult" finished-at="2020-08-26T22:04:20 EDT" duration-ms="1" status="PASS">
+        <test-method signature="logins(java.lang.String, java.lang.String)[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-27T17:54:14 EDT" name="logins" data-provider="excelSheetNameAsMethodName" finished-at="2020-08-27T17:54:14 EDT" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[zohebs]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qazqaz]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logins -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-27T17:54:14 EDT" name="getResult" finished-at="2020-08-27T17:54:14 EDT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -158,7 +158,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-26T22:04:20 EDT" name="getResult" finished-at="2020-08-26T22:04:20 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-27T17:54:14 EDT" name="getResult" finished-at="2020-08-27T17:54:14 EDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -169,7 +169,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="cleanup()[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-26T22:04:20 EDT" name="cleanup" finished-at="2020-08-26T22:04:21 EDT" duration-ms="1061" status="PASS">
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:tests.login@38c6f217]" started-at="2020-08-27T17:54:14 EDT" name="cleanup" finished-at="2020-08-27T17:54:15 EDT" duration-ms="653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->

@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import com.browserstack.local.Local;
@@ -55,7 +56,9 @@ public class Browser {
 			} 
 			else if(browser.equals("firefox")) {
 				System.setProperty("webdriver.gecko.driver", "driver/geckodriver.exe");
-				driver.set(new FirefoxDriver());
+				FirefoxOptions options = new FirefoxOptions();
+				options.setHeadless(headless);
+				driver.set(new FirefoxDriver(options));
 			}
 			else if(browser.equals("edge")) {
 				System.setProperty("webdriver.edge.driver", "driver/MicrosoftWebDriver.exe");
@@ -70,6 +73,7 @@ public class Browser {
 		        	caps.setCapability("browser", browser);
 		        	caps.setCapability("browser_version", "81");
 		        	caps.setCapability("name", "baseframework test");
+		        	caps.setCapability("browserstack.local", "true");		        	
 		        	driver.set(new RemoteWebDriver(new java.net.URL(URL), caps));
 				} catch (MalformedURLException e) {
 					e.printStackTrace();
@@ -84,6 +88,7 @@ public class Browser {
 	        	caps.setCapability("browser", browser);
 	        	caps.setCapability("browser_version", "13");
 	        	caps.setCapability("name", "baseframework test");	
+	        	caps.setCapability("browserstack.local", "true");	        	
 	        	driver.set(new RemoteWebDriver(new java.net.URL(URL), caps));    
 				} catch (MalformedURLException e) {
 					e.printStackTrace();
@@ -95,7 +100,7 @@ public class Browser {
 			System.setProperty("webdriver.chrome.driver","driver/chromedriver.exe");			
 			driver.set(new ChromeDriver());
 		}
-        driver.get().manage().window().maximize();
+//        driver.get().manage().window().maximize();
 		
     	} catch (Exception e1) {
 			// TODO Auto-generated catch block
