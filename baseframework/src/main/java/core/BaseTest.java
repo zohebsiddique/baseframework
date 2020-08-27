@@ -1,7 +1,5 @@
 package core;
 
-import static org.testng.Assert.fail;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -13,7 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -30,7 +28,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 
-import pageobjects.homepage;
 
 public class BaseTest extends Browser  {
 
@@ -45,11 +42,12 @@ public class BaseTest extends Browser  {
 	@BeforeSuite
     public void reportSetup(String environment) {		
 		try {
+			
 		spark = new ExtentSparkReporter("reports/Spark.html");
 		spark.config().setEncoding("utf-8");
 		spark.config().setTheme(Theme.DARK);		
 		extent.attachReporter(spark);
-		System.out.println("environment is : " + environment);
+
 			Properties prop = readPropertiesFile("environment-"+environment.toLowerCase()+".properties");
 			url = prop.getProperty("url");
 		} catch (IOException e) {
@@ -57,10 +55,11 @@ public class BaseTest extends Browser  {
 		}			
 	}
 	
-	@Parameters({"browser"})
+	@Parameters({"browser", "platform", "os"})
 	@BeforeClass
-	public void setup(String browser) {
-		setDriver(browser.toLowerCase());
+	public void setup(@Optional("chrome") String browser, @Optional("Jenkins") String platform, @Optional("windows") String os) {
+		System.out.println("browser is : " + browser);
+		setDriver(browser.toLowerCase(), platform.toLowerCase(), os.toLowerCase());
 	}	
 	
 	@AfterClass

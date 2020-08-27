@@ -2,7 +2,14 @@ package tests;
 
 import static org.testng.Assert.assertEquals;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -32,5 +39,23 @@ public class homepagetest extends BaseTest  {
 		}
     }
 
+	
+	@Test
+    public void getElements() throws Exception {
+		driver = getDriver();
+		driver.get(url);
+		extentTest = extent.createTest("MyFirstTest");		
+//		Thread.sleep(5000);
+//		List<WebElement> el = driver.findElements(By.cssSelector("*"));
+//		List<String> el1 = new ArrayList();
+//
+//		for ( WebElement e : el ) {
+//			if(e.getTagName().equals("a")) {
+//				System.out.println(e.getTagName() +" "+ e.getText());
+//			}	
+//		}
+	
+		//		String s = JOptionPane.showInputDialog("Enter name: ");
+    }
 
 }

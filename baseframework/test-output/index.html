@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Zoheb Siddique\AppData\Local\Temp\testng-eclipse--995502546\testng-customsuite.xml</span>
+                    <span>C:\Users\Zoheb Siddique\AppData\Local\Temp\testng-eclipse--1216265584\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="tests.homepagetest" class="method navigator-link" hash-for-method="homepageTests">homepageTests</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="tests.homepagetest" class="method navigator-link" hash-for-method="getElements">getElements</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,9 +127,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="homepageTests">
-                  </a> <!-- homepageTests -->
-                  <span class="method-name">homepageTests</span>
+                  <a name="getElements">
+                  </a> <!-- getElements -->
+                  <span class="method-name">getElements</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +137,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Zoheb Siddique\AppData\Local\Temp\testng-eclipse--995502546\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Zoheb Siddique\AppData\Local\Temp\testng-eclipse--1216265584\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -148,7 +148,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;tests.homepagetest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;homepageTests&quot;/&gt;
+          &lt;include name=&quot;getElements&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- tests.homepagetest --&gt;
     &lt;/classes&gt;
@@ -192,14 +192,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'homepageTests')
+data.setCell(0, 1, 'getElements')
 data.setCell(0, 2, 'tests.homepagetest')
-data.setCell(0, 3, 27302);
+data.setCell(0, 3, 167630);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -214,9 +214,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.homepagetest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">homepageTests</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -232,23 +239,19 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">207 ms</span>
+                <span class="method-start">283 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">homepageTests</span>
-                <span class="method-start">6360 ms</span>
+                <span class="method-name">getElements</span>
+                <span class="method-start">6597 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=homepageTests status=SUCCESS method=homepagetest.homepageTests()[pri:0, instance:te...)</span>
-                <span class="method-start">33668 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">cleanup</span>
-                <span class="method-start">33683 ms</span>
+                <span class="method-start">174234 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">34550 ms</span>
+                <span class="method-start">175130 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

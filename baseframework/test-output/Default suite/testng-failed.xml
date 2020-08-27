@@ -6,8 +6,8 @@
       <class name="tests.homepagetest">
         <methods>
           <include name="tearDown"/>
-          <include name="homepageTests"/>
           <include name="setup"/>
+          <include name="getElements"/>
           <include name="getResult"/>
           <include name="cleanup"/>
           <include name="reportSetup"/>
